@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remaining Methods of Strings and arrays</title>
+</head>
+<body>
+    <script>
+        //Strings
+
+
+        let carName1 = "Volvo XC60"; // Double quotes
+        console.log(carName1);
+
+        var carName2 = 'Volvo XC60'; // Single quotes
+        console.log(carName2);
+
+        //quotes inside the string
+
+        let answer1 = "It's alright";
+        console.log(answer1);
+
+        let answer2 = "He is called 'Johnny'";
+        console.log(answer2);
+
+        let answer3 = 'He is called "Johnny"'; 
+        console.log(answer3);
+
+        let x = "My Name is \"Akanksha\".";
+        console.log(x);
+
+        let y = 'It\'s alright.';
+        console.log(y);
+
+        //strings can be used as objects
+
+        let a = "John";        // x is a string
+        console.log(a);
+        console.log(typeof a);
+
+        //comparasion
+
+        var c = "John";        // x is a string
+        var b = new String("John");  // y is  a object
+        console.log(c==b);
+        console.log(c===b);
+
+
+        //Arrays
+
+        let cars = ["Saab", "Volvo", "BMW"];
+        console.log(cars)
+
+        let name = cars[0];
+        console.log(name)
+
+        cars[0] = "Opel";
+        console.log(cars);
+
+        let fruits = ["Banana", "Orange", "Apple", "Mango"];
+        console.log(fruits.length);
+
+        console.log(Array.isArray(fruits));
+
+        console.log(fruits instanceof Array);
+
+
+    </script>
+    
+</body>
+</html>
