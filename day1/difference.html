@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The scope is global when a var variable is declared outside a function.The scope is global when a var variable is declared outside a function.var variables can be redelared and updated </p>
+    <p>variable declared in a block with let  is only available for use within the block</p> 
+    <p>Variables declared with the const maintain constant values. const declarations share some similarities with let declarations.Like let declarations, const declarations can only be accessed within the block they were declared.value of a variable declared with const remains the same within its scope. It cannot be updated or re-declared. </p>
+    <script>
+        var greeter = "hey hi";
+    
+        function newFunction() {
+            var hello = "hello";
+    }
+    //console.log(hello);//error:hello is not defined
+    console.log(greeter);
+    let greeting = "say Hi";
+    let times = 4;
+
+    if (times > 3) {
+        let hello = "say Hello instead";
+        console.log(hello);// "say Hello instead"
+    }
+    console.log(hello) // hello is not defined
+
+    const greeting = "say Hi";
+    greeting = "say Hello instead";// error: Assignment to constant variable. 
+    
+    </script>
+</body>
+</html>
