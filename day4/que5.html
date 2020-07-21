@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 5</title>
+</head>
+<body>
+    <script>
+         let sales = prompt("Input");
+         switch (sales) {
+             case sales <= 5000:
+                 let x = 2/100;
+                 console.log('total commission earned by him is ' + sales*x);
+                 break;
+
+             case sales <= 10000:
+                 let y = 5/100;
+                 console.log('total commission earned by him is ' + sales*y);
+                 break;
+
+             case sales <= 20000:
+                 let z = 7/100;
+                 console.log('total commission earned by him is ' + sales*z);
+                 break;
+
+             case sales >= 20000:
+                 let a = 10/100;
+                 console.log('total commission earned by him is ' + sales*a);
+                 break;
+
+             default:
+                  console.log('no commission');
+         }
+
+    </script>
+    
+</body>
+</html>
